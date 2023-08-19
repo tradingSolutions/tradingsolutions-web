@@ -1,0 +1,248 @@
+:root {
+    --color-principal: #428FBA;
+    --color-secundario: #86c7ff;
+    --color-hover: #2C5F7C;
+    --color-footer: #000;
+    --color-fondoGris: #f5f5f5;
+}
+html {
+    box-sizing: border-box;     /* significa que el ancho y la altura de un elemento incluyen el relleno y el borde, pero no el margen exterior. Esto es útil para mantener un mejor control del diseño y evitar problemas de desbordamiento.*/
+    font-size: 62.5%;           /* 1 rem = 10px - establece el tamaño de fuente base para el documento */ 
+}
+*, *:before, *:after {
+    box-sizing: inherit;        /*  hace que todos los elementos (incluyendo los pseudo-elementos) hereden el valor del modelo de caja establecido en la etiqueta html */
+}
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/*---------------------*/
+/*---- Titulos h1 -----*/
+/*---------------------*/
+.h1-titulo {
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+/*------------------*/
+/*---- Titulo1 -----*/
+/*------------------*/
+.h1-titulo1 {
+    text-align: center;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .h1-titulo1 {
+        margin-bottom: 10rem;
+    }
+}
+
+/*------------------*/
+/*---- Titulo3 -----*/
+/*------------------*/
+.h1-titulo3 {
+    text-align: center;
+    padding-top: 3rem;
+    margin: 0 0 5rem 0;
+}
+
+/*------------------------------*/
+/*---- Contenedor-imagenes -----*/
+/*------------------------------*/
+.contenedor-imagenes {
+    background-color: var(--color-fondoGris);
+}
+.add-padding{
+    padding: 4rem;
+}
+
+/*--------------------*/
+/*---- Imagenes1 -----*/
+/*--------------------*/
+.img-responsive {
+    width: 110%;
+    margin: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .img-responsive, .img-middle  {
+        width: 41rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .img-middle {
+        margin-top: -5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+/*--------------------*/
+/*---- Imagenes2 -----*/
+/*--------------------*/
+.img-left2, .img-right2 {
+    width: 60%;
+}
+@media (min-width: 768px) {
+    .img-left2, .img-right2 {
+        margin-left: 7rem;
+        width: 80%;
+    }
+}
+
+/*--------------------*/
+/*---- Imagenes3 -----*/
+/*--------------------*/
+.img-left3, .img-right3 {
+    width: 80%;
+}
+    
+/*--------------------*/
+/*---- Imagenes4 -----*/
+/*--------------------*/
+.img-responsive4 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .img-responsive4{
+        width: 80%;
+        margin-bottom: 0;
+    }
+}
+div.col-md-6.text-center {
+    margin-top: 0px !important;
+}
+
+/*---------------------*/
+/*---- Definicion -----*/
+/*---------------------*/
+.definicion-servicio p {
+    text-align: left;
+    padding: 0 1rem 2rem 3rem;
+}
+
+@media (min-width: 768px ) {
+    .definicion-servicio p {
+        text-align: center;
+        padding: 2rem 35rem;
+    }
+}
+
+/*--------------------------*/
+/*---- Caracteristicas -----*/
+/*--------------------------*/
+.caracteristica {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .caracteristica {
+        margin-bottom: 5rem;
+    }
+}
+.icono {
+    margin-right: 2rem;
+}
+
+/*-----------------*/
+/*---- Botones -----*/
+/*-----------------*/
+.btn-primary {
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
+}
+.offset-1 {
+    padding-bottom: 1rem;
+}
+.btn-secondary {
+    background-color: #fff;
+    border-color: var(--color-principal);
+    color: var(--color-principal);
+}
+.no-margin {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .btn-primary {
+        padding: 1rem 2rem;
+        box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+        font-size: 1.8rem;
+    }
+    .offset-1 {
+        padding-bottom: 0;
+    }
+    .btn-secondary {
+        padding: 1.1rem 4rem;
+        box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+        font-size: 1.8rem;
+    }
+}
+.btn-contact a{
+    font-size: 1.6rem;
+    width: 100%;
+}
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: var(--color-hover);
+}
+.btn-secondary:hover {
+    border-color: var(--color-hover);
+}
+
+.mb-5 {
+    padding-bottom: 3rem;
+}
+
+/*-----------------*/
+/*---- Footer -----*/
+/*-----------------*/
+footer {
+    margin-top: 5rem;
+}
+.footer {
+    background-color: #000;
+}
+.copyright {
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+}
+.mb-4 .redes {
+    margin-left: 1rem;
+}
+.footer-copy-redes {
+    margin: 0;
+}
+footer h5 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+footer a {
+    text-decoration: none;
+    color: #c6c6c6;
+    font-size: 1.4rem;
+}
+footer a:hover {
+    color: #409eff !important;
+}
+.mb-4 p {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    footer p {
+        font-size: small;
+        margin-right: 35rem;
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+}
+.text-gray {
+    color: #c6c6c6;
+}

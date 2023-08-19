@@ -1,0 +1,624 @@
+/*-----------------*/
+/*---- General ----*/
+/*-----------------*/
+
+body {
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","\5fae\8f6f\96c5\9ed1",Arial,sans-serif;
+    background-color: #ffffff;
+}
+
+/*-----------------*/
+/*-----  Nav  -----*/
+/*-----------------*/
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.container-nav {
+    background-color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.contact {
+    padding-top: 10px;
+}
+
+.fa-lg {
+    font-size: 30px;
+    color: #409eff;
+}
+
+
+/* */
+
+/* .custom-collapse {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+    }
+} */
+
+.custom-collapse {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Empieza fuera de la pantalla */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    transition: right 0.3s ease; /* Agregamos transición solo en el desplazamiento horizontal */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Añade scroll si el contenido es muy largo */
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        margin-right: 15px; /* Añade espacio entre el botón y el menú */
+    }
+
+    .navbar-collapse.show {
+        right: 0; /* Despliega el menú hacia la derecha */
+    }
+}
+
+
+
+/*-----------------*/
+/*-----  Sec1 -----*/
+/*-----------------*/
+
+.mt-4{
+    margin-top: 150px !important;
+}
+
+h1 {
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+h1 span {
+    color: #409eff;
+}
+
+.h1-titulo {
+    padding-top: 20px !important;
+}
+
+.p-titulo {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+iframe {
+  border-radius: 20px; /* Cambia este valor según tu preferencia */
+  overflow: hidden; /* Esto es importante para que el borde redondeado funcione */
+}
+
+.row {
+    margin: 20px;
+}
+
+.section-cards {
+    margin: 80px;
+}
+
+.custom-card {
+    max-width: 300px;
+    /* border: none; */
+}
+
+.card-title{
+    text-align: center !important;
+}
+
+/*-----------------*/
+/*----- Gray1 -----*/
+/*-----------------*/
+
+.gray-block {
+    background-color: #f5f5f5;
+    padding: 20px 0 8px 0; 
+    margin-bottom: 40px;
+    border-radius: 30px;
+}
+
+.logo-image {
+    padding: 0;
+    border: 0;
+    background-color: #f5f5f5
+}
+
+.no-border {
+    border: 0;
+}
+
+#tv-img {
+    padding-top: 10px;
+}
+
+.center-cropped-image-signals {
+    object-fit: cover;
+    width: 350px; 
+    height: 80px; 
+}
+
+.meta-trader {
+    padding-top: 8px;
+}
+
+.binance {
+    padding-top: 10px;
+}
+
+.ninja {
+    padding-top: 14px;
+}
+
+/*-----------------*/
+/*---- Services ---*/
+/*-----------------*/
+
+.services-section {
+    margin-top: 100px;
+}
+
+/* h4 span {
+    color: #409eff;
+    text-align: left;
+    padding-left: 20px;
+} */
+
+.container h1 {
+    padding: 0 20px 0 20px;
+}
+
+.h1-servicio {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.services-section {
+    padding: 40px 0;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.h1-services {
+    padding-left: 120px !important;
+    padding-right: 120px !important;
+    margin-bottom: 50px !important;
+}
+
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #409eff;
+    border-radius: 50px;
+    background-color: white;
+    color: #409eff;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.img-equal-height {
+    max-height: 270px; /* Establece la altura máxima deseada */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    object-fit: cover;
+}
+
+.row-services {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.service-card {
+    height: 100%;
+}
+
+.card-body .icon{
+    margin-right: 10px;
+}
+
+.card-body .card-title {
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.card-body-right p {
+    text-align: left;
+    padding-left: 80px;
+}
+
+.card-body-right {
+    text-align: right;
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+
+h3 .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+
+.btn-custom:hover {
+    background-color: #409eff;
+    color: white;
+}
+
+/*-----------------*/
+/*---- Slider  ----*/
+/*-----------------*/
+
+.container-slider {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Para una relación de aspecto 16:9 */
+    overflow: hidden;
+    margin-bottom: 120px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.image,
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    display: block;
+}
+
+.slider {
+    width: 50%;
+    background: url(../static/trading-after.png) 0 0 / cover no-repeat;
+    background-size: cover;
+    cursor: ew-resize;
+}
+
+.slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 2px;
+    height: 100%;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.slider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid #333;
+    transform: translateY(-50%);
+}
+
+/*-----------------*/
+/*---- Signals ----*/
+/*-----------------*/
+
+.signals{
+    padding: 5px 5px;
+}
+
+.gray-h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.the-signals {
+    padding-bottom: 20px;
+}
+
+/* .text-md-end {
+    padding-right: 250px;
+} */
+
+.sig-btn{
+    background-color: #409eff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+div.col-md-6.text-center {
+    margin-top: 40px !important;
+}
+
+h3 span{
+    color: #409eff
+}
+
+/*-----------------*/
+/*-- Herramientas--*/
+/*-----------------*/
+
+.estrategias-tv{
+    margin-top: 150px;
+}
+
+.herramientas-h1, .herramientas-p, .herramientas-h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p span {
+    color: #409eff;
+}
+
+.center-container {
+    text-align: center;
+}
+  
+.custom-button {
+    padding: 10px 20px;
+    background-color: #409eff; /* Color del fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 20px; /* Radio del borde redondeado */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.col-md-6 {
+    margin-bottom: 20px;
+}
+
+.tools-a {
+    text-decoration: none;
+    color: #000;
+}
+
+.thumbnail {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+.image-caption {
+    display: flex;
+    padding: 10px;
+    font-weight: 600;
+}
+    
+.caption-left {
+    flex: 1;
+}
+
+.caption-right a {
+    text-decoration: none;   
+}
+
+.herramientas-h3{
+    margin: 25px 0px;
+    padding: 0 200px;
+}
+
+.btn-custom.btn-custom-tv a{
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer;
+}
+
+/*-----------------*/
+/*----- Stats ------*/
+/*-----------------*/
+
+
+.white-gray-block{
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    margin: 80px 0 80px 0px;
+    border-radius: 30px;
+}
+
+.col-md-12 .text-center .mb-4 {
+    margin-bottom: 0px !important;
+}
+
+.stats-body {
+    background: none;
+    border-radius: 10px;
+}
+
+.stats-card {
+    background: none;
+    border: none;
+}
+
+.stats-card p {
+    font-weight: 600;
+}
+
+.stats-i {
+    color: #409eff;
+}
+
+/*-----------------*/
+/*---Testimonios---*/
+/*-----------------*/
+
+.testimonios-h1 {
+    margin-bottom: 100px;
+}
+
+.author-info {
+    margin-top: 50px;
+}
+
+.testimonial-container {
+    text-align: center;
+}
+
+.test-card {
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: #f5f5f5;
+}
+
+.center-card {
+    margin-top: -50px; /* Ajusta el valor según tu diseño */
+    margin-bottom: 100px;
+    background-color: #e0f3ff;
+    border-color: #86c7ff;
+    flex-grow: 1;
+}
+
+.quote-icon {
+    font-size: 50px;
+    color: #cfcfcf;
+}
+
+.author-info {
+    /* position: absolute; */
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+h6 span {
+    color: #409eff
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/*-----------------*/
+/*----- FAQS ------*/
+/*-----------------*/
+
+.faq-question .answer {
+    /* background-color: #f9f9f9; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: none !important;
+    padding: 5px;
+}
+
+.accordion-button {
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+    background-color: #fff !important;
+    border-bottom: none !important;
+}
+
+.accordion-body {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .mt-5{
+    margin-bottom: 50px;
+}
+
+.accordion-button.collapsed {
+    color: #000;
+    background: #fff;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+/*-----------------*/
+/*---- Footer -----*/
+/*-----------------*/
+
+footer {
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: #000;
+}
+
+.copyright {
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+
+.mb-4 .redes {
+    margin-left: 10px;
+}
+
+.footer-copy-redes {
+    margin: 0;
+}
+
+footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #c6c6c6;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #409eff !important;
+}
+
+footer p {
+    font-size: small;
+    margin-right: 350px;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+.text-gray {
+    color: #c6c6c6;
+}
