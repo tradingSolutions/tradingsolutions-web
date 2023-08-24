@@ -43,7 +43,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     .navbar-toggler {
         margin-right: 15px;
     }
@@ -82,6 +82,14 @@ body {
     .navbar-nav i {
         font-size: 2rem;
     }
+
+    .show-desktop {
+        display: none!important;
+    }
+
+    .show-desktop a .col-md-6{ 
+        margin-bottom: 0rem !important;
+    }
 } 
 
 @media (max-width: 370px) {
@@ -90,6 +98,15 @@ body {
     }
     .navbar-toggler {
         margin-left: 1rem !important;
+    }
+}
+
+@media (min-width: 990px) {
+    .show-mobile {
+        display: none!important;
+    }
+    .nav-link-right {
+        padding-left: 1.5rem;
     }
 }
 
@@ -158,6 +175,12 @@ iframe {
     font-size: 1.8rem;
     text-align: center !important;
     padding: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .full-width {
+        width: 100%;
+    }
 }
 
 /*-----------------*/
