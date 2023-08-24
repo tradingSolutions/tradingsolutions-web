@@ -22,3 +22,9 @@ document.addEventListener('mouseup', function() {
 
 document.addEventListener('mousemove', moveSlider);
 
+document.querySelectorAll('.navbar-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Cerrar el menú colapsado después de hacer clic en un enlace
+        document.querySelector('.navbar-toggler').click(); 
+    });
+});

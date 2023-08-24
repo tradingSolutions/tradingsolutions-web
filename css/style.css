@@ -7,7 +7,7 @@
 }
 html {
     box-sizing: border-box;     /* significa que el ancho y la altura de un elemento incluyen el relleno y el borde, pero no el margen exterior. Esto es útil para mantener un mejor control del diseño y evitar problemas de desbordamiento.*/
-    font-size: 62.5%;           /* 1 rem = 10px - establece el tamaño de fuente base para el documento */ 
+    font-size: 62.5%;           /* 1 rem = 10px - establece el tamaño de fuente base para el documento */
 }
 *, *:before, *:after {
     box-sizing: inherit;        /*  hace que todos los elementos (incluyendo los pseudo-elementos) hereden el valor del modelo de caja establecido en la etiqueta html */
@@ -28,31 +28,20 @@ body {
 }
 .container-nav {
     background-color: #ffffff;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 .bg-light {
     background-color: #ffffff !important;
 }
 .contact {
-    padding-top: 10px;
+    padding-top: 1rem;
 }
 .fa-lg {
-    font-size: 30px;
+    font-size: 3rem;
     color: #409eff;
 }
 
-/* .custom-collapse {
-    position: fixed;
-    top: 0;
-    right: -300px; 
-    width: 300px;
-    height: 100%;
-    background-color: #fff;
-    transition: 0.3s ease;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    overflow-y: auto;
-}
 
 @media (max-width: 768px) {
     .navbar-toggler {
@@ -62,45 +51,66 @@ body {
     .navbar-collapse.show {
         right: 0;
     }
-} */
 
-.custom-collapse {
-    position: fixed;
-    top: 0;
-    right: -300px; /* Empieza fuera de la pantalla */
-    width: 300px;
-    height: 100%;
-    background-color: #fff;
-    transition: right 0.3s ease; /* Agregamos transición solo en el desplazamiento horizontal */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    overflow-y: auto; /* Añade scroll si el contenido es muy largo */
-}
+    .custom-collapse {
+        padding: 5rem 0px 0px 5rem ;
+        position: fixed;
+        top: 7.5rem;
+        right: -100%; /* Inicialmente oculto a la izquierda */
+        width: 100%;
+        height: 100%;
+        background-color: #fff; /* Fondo del menú */
+        z-index: 1000; /* Z-index mayor para asegurar que esté sobre otros elementos */
+        transition: right 0.5s ease; /* Transición suave de izquierda */
+    }
+    
+    /* Estilos para mostrar el menú */
+    .custom-collapse.show {
+        right: 0; /* Mostrar el menú lateral */
+    }
 
-@media (max-width: 768px) {
+    .navbar-nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.8rem;
+    }
+
+    .navbar-nav h1 {
+        font-weight: 800;
+    }
+
+    .navbar-nav i {
+        font-size: 2rem;
+    }
+} 
+
+@media (max-width: 370px) {
+    .container-nav {
+        flex-wrap: nowrap !important;
+    }
     .navbar-toggler {
-        margin-right: 15px; /* Añade espacio entre el botón y el menú */
-    }
-
-    .navbar-collapse.show {
-        right: 0; /* Despliega el menú hacia la derecha */
+        margin-left: 1rem !important;
     }
 }
+
+
 
 /*-----------------*/
-/*-----  Sec1 -----*/
+/*-----  Body -----*/
 /*-----------------*/
 .mt-4{             /* container */
-    margin-top: 150px !important;
+    margin-top: 15rem !important;
 }
 h1 {
     font-weight: 600;
-    padding-top: 20px;
+    padding-top: 2rem;
 }
 h1 span {
     color: #409eff;
 }
 .h1-titulo {
-    padding-top: 20px !important;
+    padding-top: 2rem !important;
+    padding-left: 2rem;
     font-size: 2.5rem;
 }
 @media (min-width: 768px) {
@@ -113,227 +123,197 @@ h1 span {
 .p-titulo {
     font-size: 2rem;
     line-height: 2.5rem;
-    padding-left: 20px;
-    margin-top: 20px;
+    padding-left: 2rem;
+    margin: 2rem 0 4rem 0;
+}
+@media (min-width: 768px) {
+    .p-titulo {
+        margin: 0;
+    }
 }
 iframe {
-  border-radius: 20px; 
+  border-radius: 2rem;
   overflow: hidden;    /* Esto es importante para que el borde redondeado funcione */
 }
 .row {
-    margin: 20px;
+    margin: 2rem;
 }
+
+/*-----------------------------*/
+/*-----  3 primeras Cards -----*/
+/*-----------------------------*/
 .section-cards {
-    margin: 80px;
+    margin: 5rem 0;
 }
-.custom-card {
-    max-width: 300px;
-    /* border: none; */
+@media (min-width: 768px) {
+    .section-cards {
+        margin: 8rem;
+    }
 }
 .card-title{
+    font-size: 1.8rem;
     text-align: center !important;
+    padding: 0 !important;
 }
 
 /*-----------------*/
 /*----- Gray1 -----*/
 /*-----------------*/
-
 .gray-block {
     background-color: #f5f5f5;
-    padding: 20px 0 8px 0; 
-    margin-bottom: 40px;
-    border-radius: 30px;
+    padding: 2rem 0 0.8rem 0;
+    margin-bottom: 4rem;
+    border-radius: 1.5rem;
 }
-
 .logo-image {
     padding: 0;
     border: 0;
     background-color: #f5f5f5
 }
-
 .no-border {
     border: 0;
 }
-
 #tv-img {
-    padding-top: 10px;
+    padding-top: 1rem;
 }
-
-.center-cropped-image-signals {
-    object-fit: cover;
-    width: 350px; 
-    height: 80px; 
-}
-
 .meta-trader {
-    padding-top: 8px;
+    padding-top: 0.8rem;
 }
-
 .binance {
-    padding-top: 10px;
+    padding-top: 1rem;
 }
-
 .ninja {
-    padding-top: 14px;
+    padding-top: 1.4rem;
 }
 
 /*-----------------*/
 /*---- Services ---*/
 /*-----------------*/
-
 .services-section {
-    margin-top: 100px;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
-/* h4 span {
-    color: #409eff;
-    text-align: left;
-    padding-left: 20px;
-} */
-
-.container h1 {
-    padding: 0 20px 0 20px;
-}
-
-.h1-servicio {
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-}
-
-.services-section {
-    padding: 40px 0;
-    margin-bottom: 50px;
-}
-
-.section-title {
-    margin-bottom: 30px;
-    padding-left: 20px;
-}
-
+/*------------------------*/
+/*---- Services titulo ---*/
+/*------------------------*/
 .h1-services {
-    padding-left: 120px !important;
-    padding-right: 120px !important;
-    margin-bottom: 50px !important;
+    padding: 0 2rem;
+}
+@media (min-width: 768px) {
+    .h1-services {
+        margin-bottom: 4rem !important;
+    }
 }
 
+/*-----------------------*/
+/*---- Services cards ---*/
+/*-----------------------*/
+@media (min-width: 768px) {
+    .row-services {         /* contiene las 4 tarjetas */
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+.service-card {          /* contiene 1 tarjeta */
+    height: 100%;
+}
+
+.service-card p {
+    text-align: left !important;
+}
+
+.card-body {
+    padding: 2rem;
+}
+.card-body .icon {
+    margin-right: 1.5rem;
+}
+
+.card-body-right {       /* Abarca texto y boton */
+    text-align: right;   /* Abarca boton */
+    padding: 0 2rem 2rem 2rem
+}
+.card-text p {
+    text-align: left !important;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .card-text p {
+        padding-left: 4.5rem;
+        text-align: left !important
+    }
+}
 .btn-custom {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     border: 2px solid #409eff;
-    border-radius: 50px;
+    border-radius: 5rem;
     background-color: white;
     color: #409eff;
     font-weight: bold;
     text-decoration: none;
     position: relative;
     transition: background-color 0.3s, color 0.3s;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
-
-.img-equal-height {
-    max-height: 270px; /* Establece la altura máxima deseada */
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
-    object-fit: cover;
-}
-
-.row-services {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.service-card {
-    height: 100%;
-}
-
-.card-body .icon{
-    margin-right: 10px;
-}
-
-.card-body .card-title {
-    padding-top: 10px;
-    padding-left: 20px;
-    text-align: left;
-}
-
-.card-body-right p {
-    text-align: left;
-    padding-left: 80px;
-}
-
-.card-body-right {
-    text-align: right;
-    padding-right: 50px;
-    margin-bottom: 10px;
-}
-
-h3 .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.card-text {
-    margin-bottom: 20px;
-}
-
-
 .btn-custom:hover {
     background-color: #409eff;
     color: white;
 }
 
+/* .img-equal-height { */
+    /* max-height: 270px; Establece la altura máxima deseada */
+    /* width: 100%; Asegura que la imagen ocupe todo el ancho disponible */
+    /* object-fit: cover; */
+/* }  */
+
 /*-----------------*/
 /*---- Slider  ----*/
 /*-----------------*/
-
 .container-slider {
     position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%; /* Para una relación de aspecto 16:9 */
     overflow: hidden;
-    margin-bottom: 120px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    margin-bottom: 8rem;
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.5);
 }
-
-.image,
-.slider {
+.image, .slider {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-
 .image {
     display: block;
 }
-
 .slider {
     width: 50%;
     background: url(../static/trading-after.png) 0 0 / cover no-repeat;
     background-size: cover;
     cursor: ew-resize;
 }
-
 .slider::before {
     content: '';
     position: absolute;
     top: 0;
     left: 100%;
-    width: 2px;
+    width: 0.2rem;
     height: 100%;
     background: white;
     transform: translateX(-50%);
 }
-
 .slider::after {
     content: '';
     position: absolute;
     top: 50%;
-    right: -10px;
-    width: 20px;
-    height: 20px;
+    right: -1rem;
+    width: 2rem;
+    height: 2rem;
     background: white;
     border-radius: 50%;
     border: 2px solid #333;
@@ -343,36 +323,37 @@ h3 .card-title {
 /*-----------------*/
 /*---- Signals ----*/
 /*-----------------*/
-
-.signals{
-    padding: 5px 5px;
+.gray-block-signals {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
 }
-
 .gray-h3 {
     font-weight: 500;
-    margin-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
 }
-
 .the-signals {
-    padding-bottom: 20px;
+    padding: 0 !important;
+}
+.center-cropped-image-signals {
+    object-fit: cover;
+    width: 30rem;
+    height: 8rem;
 }
 
-/* .text-md-end {
-    padding-right: 250px;
-} */
-
+@media (min-width: 768px) {
+    .center-cropped-image-signals {
+        width: 35rem;
+    }
+}
 .sig-btn{
     background-color: #409eff;
+    font-size: 1.8rem;
     border: none;
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
 }
-
-div.col-md-6.text-center {
-    margin-top: 40px !important;
-}
-
 h3 span{
     color: #409eff
 }
@@ -380,102 +361,90 @@ h3 span{
 /*-----------------*/
 /*-- Herramientas--*/
 /*-----------------*/
-
-.estrategias-tv{
-    margin-top: 150px;
+.estrategias-tv {
+    margin-top: 5rem;
 }
-
+@media (min-width: 768px) {
+    .estrategias-tv {
+        margin-top: 8rem;
+    }
+}
 .herramientas-h1, .herramientas-p, .herramientas-h3 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
-
 p span {
     color: #409eff;
 }
-
 .center-container {
     text-align: center;
 }
-  
-.custom-button {
-    padding: 10px 20px;
-    background-color: #409eff; /* Color del fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none;
-    border-radius: 20px; /* Radio del borde redondeado */
-    font-size: 16px;
+.btn-custom.btn-custom-tv a{
+    text-decoration: none !important;
+    color: inherit;
     cursor: pointer;
 }
-
-.col-md-6 {
-    margin-bottom: 20px;
-}
-
-.tools-a {
+.tools-a {                /* Nombres de las herramientas */
     text-decoration: none;
     color: #000;
+    font-size: 1.6rem;
 }
-
+.caption-right a {        /* Pruebalo gratis */
+    text-decoration: none;
+    font-size: 1.6rem;
+}
 .thumbnail {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
 }
-
 .image-caption {
     display: flex;
-    padding: 10px;
+    padding: 1rem;
     font-weight: 600;
 }
-    
-.caption-left {
-    flex: 1;
+.herramientas-h3 {
+    padding: 0 2rem;
+    margin: 2rem;
 }
-
-.caption-right a {
-    text-decoration: none;   
+@media (min-width: 768px) {
+    .herramientas-h3{
+        margin: 2.5rem 0;
+        padding: 0 20rem;
+    }
 }
-
-.herramientas-h3{
-    margin: 25px 0px;
-    padding: 0 200px;
-}
-
-.btn-custom.btn-custom-tv a{
-    text-decoration: none; 
-    color: inherit; 
-    cursor: pointer;
+.col-md-6 {               /* Separacion entre tarjetas */
+    margin-bottom: 2rem;
 }
 
 /*-----------------*/
 /*----- Stats ------*/
 /*-----------------*/
-
-
 .white-gray-block{
     background-color: #f5f5f5;
-    padding: 20px 0;
-    margin: 80px 0 80px 0px;
+    padding: 2rem 0;
+    margin: 4rem 0;
     border-radius: 30px;
 }
-
-.col-md-12 .text-center .mb-4 {
-    margin-bottom: 0px !important;
+@media (min-width: 768px) {
+    .white-gray-block{
+        margin: 8rem 0;
+    }
 }
-
-.stats-body {
-    background: none;
-    border-radius: 10px;
+.col-md-3 {
+    padding: 0;
 }
-
 .stats-card {
     background: none;
     border: none;
 }
-
-.stats-card p {
-    font-weight: 600;
+.stats-body {
+    background: none;
+    border-radius: 10px;
+    padding: 3rem;
 }
-
+.card-text {
+    text-align: center;
+    padding: 0;
+}
 .stats-i {
     color: #409eff;
 }
@@ -483,144 +452,150 @@ p span {
 /*-----------------*/
 /*---Testimonios---*/
 /*-----------------*/
-
 .testimonios-h1 {
-    margin-bottom: 100px;
+    padding-top: 4rem;
+    margin-bottom: 3rem;
 }
-
-.author-info {
-    margin-top: 50px;
+@media (min-width: 768px) {
+    .testimonios-h1 {
+        margin-bottom: 10rem;
+    }
+}
+.test-card {
+    margin-bottom: 3rem;
+    padding: 3rem;
+    border-radius: 3rem;
+    background-color: #f5f5f5;
+}
+@media (min-width: 768px) {
+    .test-card {
+        margin-bottom: 3rem;
+        padding: 5rem;
+        border-radius: 3rem;
+    }
 }
 
 .testimonial-container {
     text-align: center;
 }
-
-.test-card {
-    margin-bottom: 30px;
-    padding: 50px;
-    border-radius: 30px;
-    background-color: #f5f5f5;
-}
-
 .center-card {
-    margin-top: -50px; /* Ajusta el valor según tu diseño */
-    margin-bottom: 100px;
     background-color: #e0f3ff;
     border-color: #86c7ff;
     flex-grow: 1;
 }
-
-.quote-icon {
-    font-size: 50px;
-    color: #cfcfcf;
+@media (min-width: 768px) {
+    .center-card {
+        margin-top: -5rem; 
+        margin-bottom: 10rem;
+    }
 }
-
+.quote-icon {
+    font-size: 5rem;
+    color: #cfcfcf;
+    margin-bottom: 1rem;
+}
 .author-info {
-    /* position: absolute; */
-    bottom: 20px;
+    bottom: 2rem;
     width: 100%;
     text-align: center;
 }
-
-h6 span {
-    color: #409eff
-}
-
-p {
+.author-info p {
+    font-size: 1.6rem;
     margin-bottom: 0;
+}
+.author-info p span {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #409eff
 }
 
 /*-----------------*/
 /*----- FAQS ------*/
 /*-----------------*/
-
 .faq-question .answer {
-    /* background-color: #f9f9f9; */
-    padding: 10px;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
-
 .accordion-item {
     border: none;
     border-bottom: none !important;
-    padding: 5px;
+    padding: .5rem;
 }
-
 .accordion-button {
     color: #000;
-    font-weight: bold;
+    font-size: 1.6rem;
     text-align: left;
     background-color: #fff !important;
     border-bottom: none !important;
 }
-
 .accordion-body {
-    padding: 10px;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: .5rem;
 }
-
 .container .mt-5{
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
-
 .accordion-button.collapsed {
     color: #000;
     background: #fff;
 }
-
 .accordion-button:focus {
     box-shadow: none;
     border-color: rgba(0,0,0,.125);
 }
+
 /*-----------------*/
 /*---- Footer -----*/
 /*-----------------*/
-
 footer {
-    margin-top: 50px;
+    margin-top: 5rem;
 }
-
 .footer {
     background-color: #000;
 }
-
 .copyright {
-    margin-right: 10px;
-    padding-bottom: 20px;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
 }
-
 .mb-4 .redes {
-    margin-left: 10px;
+    margin-left: 1rem;
 }
-
 .footer-copy-redes {
     margin: 0;
 }
-
 footer h5 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 1.2rem;
 }
-
 footer a {
     text-decoration: none;
     color: #c6c6c6;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
-
 footer a:hover {
     color: #409eff !important;
 }
-
-footer p {
-    font-size: small;
-    margin-right: 350px;
-    margin-left: 30px;
-    margin-bottom: 0;
+.mb-4-f p {
+    padding: 0 2rem;
+    margin-right: 0;
+    font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+    .mb-4-f p {
+        padding: 0;
+    }
 }
 
+@media (min-width: 768px) {
+    footer p {
+        font-size: small;
+        margin-right: 35rem;
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+}
 .text-gray {
     color: #c6c6c6;
 }

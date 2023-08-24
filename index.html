@@ -27,7 +27,7 @@
             
             <!-- Contactos -->
             <div class="nav-item d-flex contact">
-                <a class="nav-link me-3" href="mailto:nosotros@tradingsolutions.ar">
+                <a class="nav-link me-3" href="mailto:trading.solutions.mg23@gmail.com">
                     <i class="fas fa-envelope fa-lg"></i>
                 </a>
                 <a class="ms-3" href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%20,te%20asesoramos%20por
@@ -39,23 +39,57 @@
             <!-- Enlaces -->
             <div class="nav-item">
                 <!-- Botón para menú colapsado en dispositivos móviles -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".custom-collapse"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav w-100 justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#servicios">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#herramientas">Herramientas</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
+            
+        </div>
+        <div class="collapse navbar-collapse custom-collapse text-left" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="../public/index.html#servicios"><h1>Servicios</h1></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="services.html#indicadores">Indicadores/Estrategias</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="services.html#señales">Canal de Señales</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="services.html#plataformas">Integración a plataformas</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="services.html#sheets">Integración a Google Sheets</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../public/index.html#herramientas"><h1>Herramientas</h1></a>
+                </li>
+                <li>
+                    <a href="https://www.tradingview.com/script/MuGFCcEv-Divergence-Indicator-Screener-Trading-Solutions/" class="nav-link">Divergence Screener</a>
+                </li>
+                <li>
+                    <a href="https://tradingview.com/script/dM6UtZqX-Macd-Divergence-MTF-EMA/" class="nav-link">Macd MTF Divergence</a>
+                </li>
+                <li>
+                    <a href="https://tradingview.com/script/YXLCFbET-Dual-MACD-Strategy/" class="nav-link">Dual Macd</a>
+                </li>
+                <li>
+                    <a href="https://tradingview.com/script/ojICH8B7-Traffic-Lights-Strategy/" class="nav-link">Traffic Lights</a>
+                </li>
 
+                <li class="nav-item">
+                    <h1>Redes</h1>
+                </li>
+
+                <li>
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/trading.solutions_/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/TradngSolutions"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/trading-solutions/"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
         </div>
     </nav> 
 
@@ -103,7 +137,7 @@
         </div>
     </div>
 
-    <!-- Bloque de color gris -->
+    <!-- Bloque de color gris - Gray1 -->
     <div class="container">
         <div class="gray-block">
             <div class="container">
@@ -148,7 +182,6 @@
     <a id="servicios"></a>
     <div class="services-section">
         <div class="container">
-            <!-- <h4 class="section-title"><span>Soluciones Reales para problemas reales</span></h4> -->
             <h1 class="herramientas-h1 h1-services">Trading Solutions ofrece los <span>servicios</span> que te ayudarán a <span>lograr tus metas</span></h1>
             <div class="row row-services">
                 <div class="col-md-6 mb-4">
@@ -221,7 +254,7 @@
 
     <!-- The Signals Company -->
     <div class="container">
-        <div class="gray-block signals">
+        <div class="gray-block-signals">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center">
@@ -246,9 +279,6 @@
     <div class="estrategias-tv">
         <div class="container">
             <h1 class="herramientas-h1">Herramientas <span>gratuitas</span></h1>
-            <!-- <p class="herramientas-p">Para poder utilizar nuestras herramientas gratuitas y privadas es necesario crearse una cuenta haciendo click en el siguiente enlace.</p> -->
-            
-            <!-- <p class="herramientas-p"><span>Obtendrás un descuento en todos los planes dentro de la plataforma.</span></p> -->
             <div class="row">
                 <div class="col-md-6">
                     <a class="tools-a" href="">
@@ -318,7 +348,7 @@
                                     <div class="card-body stats-body">
                                         <i class="fas fa-users fa-3x mb-3 stats-i"></i>
                                         <h3><span>30</span></h3>
-                                        <p class="card-text">Clientes Felices</p>
+                                        <p class="card-text gray-stats">Clientes Felices</p>
                                     </div>
                                 </div>
                             </div>
@@ -328,7 +358,7 @@
                                     <div class="card-body stats-body">
                                         <i class="fas fa-tasks fa-3x mb-3 stats-i"></i>
                                         <h3><span>+100</span></h3>
-                                        <p class="card-text">Proyectos Terminados</p>
+                                        <p class="card-text gray-stats">Proyectos Terminados</p>
                                     </div>
                                 </div>
                             </div>
@@ -338,7 +368,7 @@
                                     <div class="card-body stats-body">
                                         <i class="fas fa-clock  fa-3x mb-3 stats-i"></i>
                                         <h3><span>6 días</span></h3>
-                                        <p class="card-text">Tiempo de entrega promedio</p>
+                                        <p class="card-text gray-stats">Tiempo de entrega promedio</p>
                                     </div>
                                 </div>
                             </div>
@@ -348,7 +378,7 @@
                                     <div class="card-body stats-body">
                                         <i class="fas fa-hourglass  fa-3x mb-3 stats-i"></i>
                                         <h3><span>+500</span></h3>
-                                        <p class="card-text">Horas de trabajo</p>
+                                        <p class="card-text gray-stats">Horas de trabajo</p>
                                     </div>
                                 </div>
                             </div>
@@ -369,8 +399,8 @@
                     <i class="fas fa-quote-left quote-icon"></i>
                     <p>Genial, la calidad del trabajo es excelente, y como siempre una gran comunicación. Se preocupan por entender y obtener las mejores alternativas para que el resultado sea mejor de lo pactado. Recomendable al 100%</p>
                     <div class="author-info">
-                        <h6>Fernanda Hernandez</h6>
-                        <h6><span>España</span></h6>
+                        <p>Fernanda Hernandez</p>
+                        <p><span>España</span></p>
                     </div>
                 </div>
             </div>
@@ -379,8 +409,8 @@
                     <i class="fas fa-quote-left quote-icon"></i>
                     <p>Trading Solutions are very professional and very skilled at what they do, I request your help all the time.</p>
                     <div class="author-info">
-                        <h6>Kevin Jones</h6>
-                        <h6><span>Estados Unidos</span></h6>
+                        <p>Kevin Jones</p>
+                        <p><span>Estados Unidos</span></p>
                     </div>
                 </div>
             </div>
@@ -391,8 +421,8 @@
                         <p>Proveedor increíble. Sabe mucho y es muy responsable. Convirtió mi indicador en una estrategia precisa y luego lo transformó en un robot comercial. ¡¡Lo recomiendo mucho!!</p>
                     </div>
                     <div class="author-info p-2">
-                        <h6>Oscar Henriquez</h6>
-                        <h6><span>República Dominicana</span></h6>
+                        <p>Oscar Henriquez</p>
+                        <p><span>República Dominicana</span></p>
                     </div>
                 </div>
             </div>
@@ -433,7 +463,7 @@
                         <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Puede contactarnos a través de nuestro correo electrónico nosotros@tradingsolutions.ar o a través del formulario de contacto en nuestro sitio web.
+                                Puede contactarnos a través de nuestro correo electrónico trading.solutions.mg23@gmail.com o a través del formulario de contacto en nuestro sitio web.
                             </div>
                         </div>
                     </div>
@@ -484,87 +514,92 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark  text-white">
-        <div class="container p-4">
-            
-            <section class="">
-                <div class="row">
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div class="container p-4">
+        
+        <section class="">
+            <div class="row">
 
-                    <div class="col-lg-3  mb-4 mb-md-0">
-                        <h5 class="text">Trading Solutions</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#servicios" class="text-gray">nosotros@tradingsolutions.ar</a>
-                                <a href="#servicios" class="text-gray">(381) 409-4843</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3  mb-4 mb-md-0">
-                        <h5 class="text">Servicios</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#servicios" class="text-gray">Todos los servicios</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3  mb-4 mb-md-0">
-                        <h5 class="text">Herramientas</h5>
-            
-                        <ul class="list-unstyled mb-0">
+                <div class="col-lg-3  mb-4 mb-md-0">
+                    <h5 class="text">Trading Solutions</h5>
+                    <ul class="list-unstyled mb-0">
                         <li>
-                            <a href="https://www.tradingview.com/script/MuGFCcEv-Divergence-Indicator-Screener-Trading-Solutions/" class="text-gray">Divergence Screener</a>
+                            <a href="#servicios" class="text-gray">trading.solutions.mg23@gmail.com</a> <br>
+                            <a href="#servicios" class="text-gray">(381) 409-4843</a>
                         </li>
-                        <li>
-                            <a href="https://tradingview.com/script/dM6UtZqX-Macd-Divergence-MTF-EMA/" class="text-gray">Macd MTF Divergence</a>
-                        </li>
-                        <li>
-                            <a href="https://tradingview.com/script/YXLCFbET-Dual-MACD-Strategy/" class="text-gray">Dual Macd</a>
-                        </li>
-                        <li>
-                            <a href="https://tradingview.com/script/ojICH8B7-Traffic-Lights-Strategy/" class="text-gray">Traffic Lights</a>
-                        </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3  mb-4 mb-md-0">
-                        <h5 class="text">Señales</h5>
-                        <a href="https://www.thesignalscompany.com/">The Signals Company</a>
-                    </div>
-                    
+                    </ul>
                 </div>
-            </section>
 
-            <!-- Texto footer-->
-            <section class="mb-4"> 
-                <p>
-                    Trading Solutions y todas las partes afiliadas no están registradas como asesores financieros. Este sitio, los productos y servicios que ofrece Trading Solutions son solo para fines educativos y no deben interpretarse como asesoramiento financiero. Debe ser consciente de los riesgos y estar dispuesto a asumir cualquier nivel de riesgo para invertir en los mercados financieros. El rendimiento pasado no es necesariamente indicativo de resultados futuros. Trading Solutions y todas las personas asociadas no asumen ninguna responsabilidad por sus resultados comerciales o inversiones.
-                </p>
-            </section>
-            
-        </div>
-        <div class="row footer-copy-redes">
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="copyright">© 2023 Copyright:
-                        <a class="text-white" href="https://tradingsolutions.ar/">Trading Solutions</a>
-                    </div>
-                    <section class="mb-4 redes">
-                        <!-- Instagram -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/trading.solutions_/" role="button"><i class="fab fa-instagram"></i></a>
+                <div class="col-lg-3  mb-4 mb-md-0">
+                    <h5 class="text">Servicios</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#servicios" class="text-gray">Todos los servicios</a>
+                        </li>
+                    </ul>
+                </div>
 
-                        <!-- Twitter -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/TradngSolutions" role="button"><i class="fab fa-twitter"></i></a>
+                <div class="col-lg-3  mb-4 mb-md-0">
+                    <h5 class="text">Herramientas</h5>
+        
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="https://www.tradingview.com/script/MuGFCcEv-Divergence-Indicator-Screener-Trading-Solutions/" class="text-gray">Divergence Screener</a>
+                    </li>
+                    <li>
+                        <a href="https://tradingview.com/script/dM6UtZqX-Macd-Divergence-MTF-EMA/" class="text-gray">Macd MTF Divergence</a>
+                    </li>
+                    <li>
+                        <a href="https://tradingview.com/script/YXLCFbET-Dual-MACD-Strategy/" class="text-gray">Dual Macd</a>
+                    </li>
+                    <li>
+                        <a href="https://tradingview.com/script/ojICH8B7-Traffic-Lights-Strategy/" class="text-gray">Traffic Lights</a>
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3  mb-4 mb-md-0">
+                    <h5 class="text">Señales</h5>
+                    <a href="https://www.thesignalscompany.com/">The Signals Company</a>
+                </div>
                 
-                        <!-- Linkedin -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/trading-solutions/" role="button"><i class="fab fa-linkedin-in"></i></a>
-                    </section>
+            </div>
+        </section>
+
+        <!-- Texto footer-->
+        <section class="mb-4-f"> 
+            <p>Trading Solutions y todas las partes afiliadas no están registradas como asesores 
+                financieros. Este sitio, los productos y servicios que ofrece Trading Solutions son 
+                solo para fines educativos y no deben interpretarse como asesoramiento financiero. 
+                Debe ser consciente de los riesgos y estar dispuesto a asumir cualquier nivel de riesgo 
+                para invertir en los mercados financieros. El rendimiento pasado no es necesariamente 
+                indicativo de resultados futuros. Trading Solutions y todas las personas asociadas no 
+                asumen ninguna responsabilidad por sus resultados comerciales o inversiones.
+            </p>
+        </section>
+        
+    </div>
+    <div class="row footer-copy-redes">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="copyright">© 2023 Copyright:
+                    <a class="text-white" href="https://tradingsolutions.ar/">Trading Solutions</a>
                 </div>
+                <section class="mb-4 redes">
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/trading.solutions_/" role="button"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/TradngSolutions" role="button"><i class="fab fa-twitter"></i></a>
+            
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/trading-solutions/" role="button"><i class="fab fa-linkedin-in"></i></a>
+                </section>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
