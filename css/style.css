@@ -216,9 +216,12 @@ iframe {
 /*-----------------*/
 /*---- Services ---*/
 /*-----------------*/
+
+
+
 .services-section {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 13rem;
+    /* margin-bottom: 8rem; */
 }
 
 /*------------------------*/
@@ -389,13 +392,9 @@ h3 span{
 /*-- Herramientas--*/
 /*-----------------*/
 .estrategias-tv {
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
-@media (min-width: 768px) {
-    .estrategias-tv {
-        margin-top: 8rem;
-    }
-}
+
 .herramientas-h1, .herramientas-p, .herramientas-h3 {
     text-align: center;
     margin-bottom: 4rem;
