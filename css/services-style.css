@@ -191,3 +191,29 @@ div.col-md-6.text-center {
 .mb-5 {
     padding-bottom: 3rem;
 }
+
+
+/* Projects html */
+
+.card-img-top {
+    width: 60%;
+    align-self: center;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.project-description {
+    font-size: 1.4rem;
+}
+
+.project-title {
+    font-size: 2.0rem;
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.section-title{
+    font-size: 2.5rem;
+}

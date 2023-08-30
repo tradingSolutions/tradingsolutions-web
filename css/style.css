@@ -75,7 +75,7 @@ body {
         font-size: 1.8rem;
     }
 
-    .navbar-nav h1 {
+    .navbar-nav h2 {
         font-weight: 800;
     }
 
@@ -118,9 +118,10 @@ body {
 .mt-4{             /* container */
     margin-top: 15rem !important;
 }
-h1 {
+h2 {
     font-weight: 600;
     padding-top: 2rem;
+    color: #409eff;
 }
 h1 span {
     color: #409eff;
